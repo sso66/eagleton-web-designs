@@ -1,0 +1,75 @@
+/* guidelines.css */
+/* 12-column custom responsive web design layout */
+#guidelines {
+	display: flex;
+}
+
+#guidelines > div {
+	display: list-item;
+	position: fixed;
+	z-index: 1000;
+	width: 1px;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.5);
+}
+
+#guidelines > div:nth-child(1) { left: 8.3333333%; }
+#guidelines > div:nth-child(2) { left: 16.666666%; }
+#guidelines > div:nth-child(3) { left: 25%; }
+#guidelines > div:nth-child(4) { left: 33.333333%; }
+#guidelines > div:nth-child(5) { left: 41.666666%; }
+#guidelines > div:nth-child(6) { left: 50%; }
+#guidelines > div:nth-child(7) { left: 58.3333333%; }
+#guidelines > div:nth-child(8) { left: 66.666666%; }
+#guidelines > div:nth-child(9) { left: 75%; }
+#guidelines > div:nth-child(10) { left: 83.333333%; }
+#guidelines > div:nth-child(11) { left: 91.666666%; }
+#guidelines > div:nth-child(12) { left: 100%; }
+
+/* container width */
+.column-1  { width: 8.333333%; }
+.column-2  { width: 16.666666%; }
+.column-3  { width: 25%; }
+.column-4  { width: 33.333333%; }
+.column-5  { width: 41.666666%; }
+.column-6  { width: 50%; }
+.column-7  { width: 58.333333%; }
+.column-8  { width: 66.666666%; } 
+.column-9  { width:  75%; }
+.column-10 { width: 83.333333%; }
+.column-11 { width: 91.666666%; }
+.column-12 { width: 100%; }
+
+hr.style-zero { display: none; }
+
+hr.style-one {
+	height: 50px;
+	background-color: #333333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc); /* //black & white */
+    border: 0;
+}
+hr.style-two {
+	height: 50px;
+	background-color: #333333;
+  	background-image: linear-gradient(to right, red, green, blue); /* //tri-color */
+    border: 0;
+}
+
+hr.style-three {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-three:after {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+    /* content: "§"; */
+   	content: "\0000";
+}
+/* eof */
