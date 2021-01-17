@@ -16,32 +16,34 @@ import {
 import Blog from './views/material/Blog';
 import Contact from './views/material/Contact';
 
-import Params from './components/router/Params';
-import RestrictionParams from './components/router/RestrictionParams';
-import Location from './components/router/Location';
-import History from './components/router/History';
-import RouteMatch from './components/router/RouteMatch'
-import Enum from './views/material/Enum';
-import { Results, GameOfChance } from './views/material/ConditionalRendering'
-import ConditionParent from './views/material/ConditionParent';
-import { 
-  ActionLink,
-  Parent,
-  User,
-} from './components/events'
-import { 
-  ElementVariable,
-  SwitchStatement,
-  TernaryOperator, 
-  LogicalAndOperator,
-} 
-from './components/conditionals'
+// import Params from './components/router/Params';
+// import RestrictionParams from './components/router/RestrictionParams';
+// import Location from './components/router/Location';
+// import History from './components/router/History';
+// import RouteMatch from './components/router/RouteMatch'
+// import Enum from './views/material/Enum';
+// import { Results, GameOfChance } from './views/material/ConditionalRendering'
+// import ConditionParent from './views/material/ConditionParent';
+// import { 
+//   ActionLink,
+//   Parent,
+//   User,
+// } from './components/events'
+// import { 
+//   ElementVariable,
+//   SwitchStatement,
+//   TernaryOperator, 
+//   LogicalAndOperator,
+// } 
+// from './components/conditionals'
 
-import {
-  ReactSelect,
-} from './components/materials'
+// import {
+//   ReactSelect,
+// } from './components/materials'
 
-import GridLayout from './components/styles/GridLayout';
+// import GridLayout from './components/styles/GridLayout';
+
+import ExpansionPanelList from './features/Accordions/ExpansionPanelist'
 
 function App() {
   return (
@@ -95,7 +97,7 @@ function App() {
       </header>
       <div>
         <Main />
-        {/* <Container maxWidth='md'> */}
+        <Container maxWidth='lg'>
           {/* <GridLayout /> */}
           {/* <ActionLink /> */}
           {/* <ReactSelect /> */}
@@ -115,7 +117,10 @@ function App() {
           {/* <RouteMatch /> */}
           {/* <Blog /> */}
           {/* <Contact /> */}
-        {/* </Container> */}
+
+
+          <ExpansionPanelList />
+        </Container>
       </div>
     </div>
   );
