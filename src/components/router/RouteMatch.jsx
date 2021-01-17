@@ -39,7 +39,7 @@ export default function RouteMatch() {
 function Node() {
   return (
     <Route
-      path="/node/:nodeId"
+      path="/node/:id"
       render={({ match }) => {
         return (
           <div>
@@ -53,7 +53,7 @@ function Node() {
 
 // useRouteMatch to make your route above cleaner
 function Restrictions() {
-  let match = useRouteMatch("/restrictions/:id/:stock");
+  let match = useRouteMatch("/node/:id/:stock");
 
   return (
     <div>

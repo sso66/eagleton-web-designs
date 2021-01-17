@@ -1,29 +1,33 @@
 // App.jsx
-import { Container } from '@material-ui/core';
 import React from 'react';
-
-// import { Counter } from './features/counter/Counter';
-// import logo from './logo.svg';
 import './App.scss';
+import { Counter } from './features/counter/Counter';
+import logo from './logo.svg';
+
+import { 
+  Container 
+} from '@material-ui/core';
 
 import { 
   Header,
   Main, 
 } from './components/site';
 
-import Hero from './views/Hero';
-import Blog from './views/Blog';
-import Contact from './views/Contact';
+import Blog from './views/material/Blog';
+import Contact from './views/material/Contact';
+
 import Params from './components/router/Params';
+import RestrictionParams from './components/router/RestrictionParams';
 import Location from './components/router/Location';
 import History from './components/router/History';
 import RouteMatch from './components/router/RouteMatch'
-import Enum from './views/Enum';
-import { Results, GameOfChance } from './views/ConditionalRendering'
-import ConditionParent from './views/ConditionParent';
+import Enum from './views/material/Enum';
+import { Results, GameOfChance } from './views/material/ConditionalRendering'
+import ConditionParent from './views/material/ConditionParent';
 import { 
   ActionLink,
   Parent,
+  User,
 } from './components/events'
 import { 
   ElementVariable,
@@ -33,6 +37,12 @@ import {
 } 
 from './components/conditionals'
 
+import {
+  ReactSelect,
+} from './components/materials'
+
+import GridLayout from './components/styles/GridLayout';
+
 function App() {
   return (
     <div className="App">
@@ -41,7 +51,7 @@ function App() {
         {/* <Counter />  */}
         {/* <p>
           Edit <code>src/App.js</code> and save to reload.
-        </p> */}
+        </p>  */}
         {/* <span>
           <span>Learn </span>
           <a
@@ -81,13 +91,16 @@ function App() {
           </a>
         </span> */}
         <Header />
-        <Hero />
+        {/* <Hero /> */}
       </header>
       <div>
         <Main />
-        <Container maxWidth='md'>
-          {/* <Parent /> */}
+        {/* <Container maxWidth='md'> */}
+          {/* <GridLayout /> */}
           {/* <ActionLink /> */}
+          {/* <ReactSelect /> */}
+          {/* <Parent /> */}
+          {/* <User /> */}
           {/* <ElementVariable /> */}
           {/* <SwitchStatement /> */}
           {/* <TernaryOperator /> */}
@@ -95,13 +108,14 @@ function App() {
           {/* <ConditionParent /> */}
           {/* <GameOfChance /> */}
           {/* <Enum /> */}
+          {/* <RestrictionParams /> */}
           {/* <Params /> */}
           {/* <Location />  */}
           {/* <History /> */}
           {/* <RouteMatch /> */}
           {/* <Blog /> */}
           {/* <Contact /> */}
-        </Container>
+        {/* </Container> */}
       </div>
     </div>
   );

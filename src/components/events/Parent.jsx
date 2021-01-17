@@ -6,7 +6,7 @@ import Child from './Child'
 function Parent () {
 
     const handleOnAction = () => {
-        alert("Child button is clicked!");
+        alert("Child button is clicked from Parent!");
     }
 
     return (

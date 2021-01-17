@@ -5,7 +5,7 @@ import { Button } from '@material-ui/core';
 function Child(props) {
     return (
         <div>
-            <Button variant="contained" onClick={props.handleOnAction}>Child </Button>
+            <Button color="primary" size="small" variant="contained" onClick={props.handleOnAction}>Parent/Child</Button>
         </div>
     );
 }
