@@ -1,12 +1,5 @@
-// ExpansionPanelist.jsx
+// ExpansionPanelLazyLoad.jsx
 import React, { useState, Fragment } from 'react';
-
-import {
-    Accordion,
-    AccordionSummary,
-    AccordionDetails,
-    Typography,
-} from '@material-ui/core';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import DevicesIcon from '@material-ui/icons/Devices';
@@ -27,9 +20,20 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function ExpansionPanelist() {
+//___ API function that fetches based on an index value ___
+const fetchPanelContent = index => 
+    new Promise(resolve =>
+        setTimeout(
+            () => 
+                resolve(
+                    [][index]
+                ),
+            1000
+        )
+    );
+
+export default function ExpansionPanelLazyLoad() {
     const classes = useStyles();
-    const [expanded, setExpanded] = useState(-1);
     const [panels] = useState([
         {
             title: 'First Panel Contend',
@@ -63,40 +67,9 @@ export default function ExpansionPanelist() {
     ]);
 
     const onPanelChange = expanded => (index) => { // HOC
-        setExpanded(expanded);
+        // to do
     }
 
-    return (
-        <Fragment>
-            {panels
-                .filter((panel) => !panel.hidden)
-                .map((panel, index) => (
-                    <Accordion
-                        key={index}
-                        disabled={panel.disabled}
-                        expanded={index === expanded}
-                        onChange={onPanelChange(index)}
-                    >
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                        >
-                            {panel.icon}
-                            <Typography 
-                                variant='subtitle1'
-                                color='primary'
-                            >
-                                    {panel.title}
-                                </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails className={classes.panelDetails}>
-                            <Typography>
-                                {panel.content}
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                ))}
-        </Fragment>
-    );
+    // to do   
 }
 
-// eof

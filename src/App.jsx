@@ -1,49 +1,23 @@
 // App.jsx
 import React from 'react';
 import './App.scss';
-import { Counter } from './features/counter/Counter';
-import logo from './logo.svg';
+// import { Counter } from './features/counter/Counter';
+// import logo from './logo.svg';
 
 import { 
   Container 
 } from '@material-ui/core';
 
 import { 
-  Header,
+  // Header,
   Main, 
 } from './components/site';
 
-import Blog from './views/material/Blog';
-import Contact from './views/material/Contact';
-
-// import Params from './components/router/Params';
-// import RestrictionParams from './components/router/RestrictionParams';
-// import Location from './components/router/Location';
-// import History from './components/router/History';
-// import RouteMatch from './components/router/RouteMatch'
-// import Enum from './views/material/Enum';
-// import { Results, GameOfChance } from './views/material/ConditionalRendering'
-// import ConditionParent from './views/material/ConditionParent';
-// import { 
-//   ActionLink,
-//   Parent,
-//   User,
-// } from './components/events'
-// import { 
-//   ElementVariable,
-//   SwitchStatement,
-//   TernaryOperator, 
-//   LogicalAndOperator,
-// } 
-// from './components/conditionals'
-
-// import {
-//   ReactSelect,
-// } from './components/materials'
-
-// import GridLayout from './components/styles/GridLayout';
-
-import ExpansionPanelList from './features/Accordions/ExpansionPanelist'
+// ___ React Hooks, Material-UI and Axios API features
+import {
+  FixedPosition,
+  // ScrolledAppBar,
+} from './features/AppBars';
 
 function App() {
   return (
@@ -92,34 +66,11 @@ function App() {
             React Redux
           </a>
         </span> */}
-        <Header />
-        {/* <Hero /> */}
       </header>
       <div>
         <Main />
-        <Container maxWidth='lg'>
-          {/* <GridLayout /> */}
-          {/* <ActionLink /> */}
-          {/* <ReactSelect /> */}
-          {/* <Parent /> */}
-          {/* <User /> */}
-          {/* <ElementVariable /> */}
-          {/* <SwitchStatement /> */}
-          {/* <TernaryOperator /> */}
-          {/* <LogicalAndOperator /> */}
-          {/* <ConditionParent /> */}
-          {/* <GameOfChance /> */}
-          {/* <Enum /> */}
-          {/* <RestrictionParams /> */}
-          {/* <Params /> */}
-          {/* <Location />  */}
-          {/* <History /> */}
-          {/* <RouteMatch /> */}
-          {/* <Blog /> */}
-          {/* <Contact /> */}
-
-
-          <ExpansionPanelList />
+        <Container maxWidth='md'>
+          <FixedPosition />
         </Container>
       </div>
     </div>
@@ -127,3 +78,5 @@ function App() {
 }
 
 export default App;
+
+// eof
