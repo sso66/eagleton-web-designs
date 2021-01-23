@@ -19,6 +19,12 @@ import {
   // ScrolledAppBar,
 } from './features/AppBars';
 
+import {
+  ExpansionPanelList, 
+  ExpansionPanelListLazyLoad,
+} from './features/Accordions'
+
+
 function App() {
   return (
     <div className="App">
@@ -70,7 +76,7 @@ function App() {
       <div>
         <Main />
         <Container maxWidth='md'>
-          <FixedPosition />
+          <ExpansionPanelListLazyLoad />
         </Container>
       </div>
     </div>

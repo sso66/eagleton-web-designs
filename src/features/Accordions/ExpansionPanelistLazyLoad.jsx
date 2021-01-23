@@ -1,24 +1,27 @@
-// ExpansionPanelist.jsx
+// ExpansionPanelistLazyLoad.jsx
 import React, { useState, Fragment } from 'react';
+
+import { makeStyles } from '@material-ui/core/styles';
 
 import {
     Accordion,
     AccordionSummary,
     AccordionDetails,
     Typography,
+    darken,
+    lighten,
 } from '@material-ui/core';
+
+import theme from '../../features/theme';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import DevicesIcon from '@material-ui/icons/Devices';
 import NetworkWifiIcon from '@material-ui/icons/NetworkWifi';
 import StorageIcon from '@material-ui/icons/Storage';
 
-import { makeStyles } from '@material-ui/core/styles';
-
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginBottom: 15,
-        borderLeft: '15px'
+        background: lighten(theme.palette.secondary.main, 0.9),
     },
     icon: {
         marginRight: theme.spacing(1)
@@ -31,7 +34,19 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function ExpansionPanelist() {
+//___ API function that fetches based on an index value ___
+const fetchPanelContent = index => 
+    new Promise(resolve =>
+        setTimeout(
+            () => 
+                resolve(
+                    [][index]
+                ),
+            1000
+        )
+    );
+
+export default function ExpansionPanelistLazyLoad() {
     const classes = useStyles();
     const [expanded, setExpanded] = useState(-1);
     const [panels] = useState([
@@ -77,8 +92,7 @@ export default function ExpansionPanelist() {
         <Fragment>
             {panels
                 .filter((panel) => !panel.hidden)
-                .map((panel, index) => (
-                  
+                .map((panel, index) => ( 
                     <Accordion
                         key={index}
                         disabled={panel.disabled}
