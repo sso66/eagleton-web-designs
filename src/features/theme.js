@@ -1,4 +1,4 @@
-// theme.js: customized theme for branding
+// theme.js
 import { red } from '@material-ui/core/colors';
 import { createMuiTheme } from '@material-ui/core/styles';
 
