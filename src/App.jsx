@@ -5,7 +5,7 @@ import './App.scss';
 // import logo from './logo.svg';
 
 import { 
-  Container 
+  Container,
 } from '@material-ui/core';
 
 import { 
@@ -76,6 +76,8 @@ function App() {
       <div>
         <Main />
         <Container maxWidth='md'>
+          <ExpansionPanelList />
+          <hr />
           <ExpansionPanelListLazyLoad />
         </Container>
       </div>
