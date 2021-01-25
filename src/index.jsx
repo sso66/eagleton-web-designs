@@ -14,6 +14,10 @@ ReactDOM.render(
     <Provider store={store}>
       <App />
       <br/>
+      {/* <a href="https://sebhastian.com/tags/react/">
+            More React tutorials at sebhastian.com
+        </a>   
+      */}
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

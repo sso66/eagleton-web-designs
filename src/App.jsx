@@ -9,21 +9,33 @@ import {
 } from '@material-ui/core';
 
 import { 
-  // Header,
+  Header,
   Main, 
 } from './components/site';
 
 // ___ React Hooks, Material-UI and Axios API features
 import {
-  FixedPosition,
+  // FixedPosition,
   // ScrolledAppBar,
 } from './features/AppBars';
 
 import {
-  ExpansionPanelList, 
-  ExpansionPanelListLazyLoad,
+  // ExpansionPanelList, 
+  // ExpansionPanelListLazyLoad,
 } from './features/Accordions'
 
+import {
+  Users,
+  Article,
+  JsonPlaceholderAxiosUsers,
+  // JsonPlaceholderAxiosUsers,
+} from './features/Axios';
+
+import {
+  ReqResUsers,
+  JsonPlaceholderFetchUsers,
+  MuiFetchReqResUsers,
+} from './features/Fetch';
 
 function App() {
   return (
@@ -76,9 +88,16 @@ function App() {
       <div>
         <Main />
         <Container maxWidth='md'>
-          <ExpansionPanelList />
+          {/* <ExpansionPanelList /> */}
           <hr />
-          <ExpansionPanelListLazyLoad />
+          {/* <ExpansionPanelListLazyLoad /> */}
+          <Article />
+          {/* <Users /> */}
+          {/* <ReqResUsers /> */}
+          {/* <JsonPlaceholderAxiosUsers /> */}
+          {/* <JsonPlaceholderFetchUsers /> */}
+          <hr />
+          <MuiFetchReqResUsers />
         </Container>
       </div>
     </div>
