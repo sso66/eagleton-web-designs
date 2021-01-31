@@ -1,1 +1,0 @@
-{"description":"","displayName":"ReactSelect","methods":[{"name":"getOptions","docblock":null,"modifiers":["async"],"params":[],"returns":null},{"name":"handleChange","docblock":null,"modifiers":[],"params":[{"name":"e","type":null}],"returns":null}]}

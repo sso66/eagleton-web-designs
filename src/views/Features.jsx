@@ -10,6 +10,8 @@ import {
     ColumnDirection,
 } from '../features/Grids'
 
+import { TypesOfTypography, UsingThemeColors, WrappingText } from '../features/Typography'
+import AligningText from '../features/Typography/AligningText';
 const Features = () => (
     // <UnderstandingBreakpoints />
     // <MarginAuto />
@@ -17,7 +19,12 @@ const Features = () => (
     // <Alignment />
     // <AbstractContainerAndItems />
     // <FixedColumnLayout />
-    <ColumnDirection />
+    // <ColumnDirection />
+
+    // <TypesOfTypography />
+    // <UsingThemeColors />
+    // <AligningText />
+    <WrappingText />
 );
 
 export default Features;
