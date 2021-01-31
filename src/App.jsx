@@ -37,6 +37,17 @@ import {
   MuiFetchReqResUsers,
 } from './features/Fetch';
 
+
+// ___ Eagleton Web Designs Website ___
+// import {
+
+// } from './views/Home'
+
+import Features from './views/Features'
+
+// import About from './views/About'
+// import Contact from './views/Contact'
+
 function App() {
   return (
     <div className="App">
@@ -97,7 +108,8 @@ function App() {
           {/* <JsonPlaceholderAxiosUsers /> */}
           {/* <JsonPlaceholderFetchUsers /> */}
           <hr />
-          <MuiFetchReqResUsers />
+          {/* <MuiFetchReqResUsers /> */}
+          <Features />
         </Container>
       </div>
     </div>

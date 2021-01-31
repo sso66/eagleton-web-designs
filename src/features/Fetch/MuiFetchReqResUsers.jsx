@@ -42,10 +42,11 @@ export default function MuiFetchReqResUsers() {
                             email={user.email}
                             avatar={user.avatar}
                         />
-
                     </Grid>
                 )}
             </Grid>
         </div>
     )
 }
+
+// eof
