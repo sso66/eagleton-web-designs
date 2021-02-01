@@ -1,7 +1,7 @@
 // App.jsx
 import React from 'react';
 import './App.scss';
-// import { Counter } from './features/counter/Counter';
+// import { Counter } from './features/Redux/Counter';
 // import logo from './logo.svg';
 
 import { 

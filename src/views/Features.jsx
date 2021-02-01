@@ -1,5 +1,4 @@
 // views/Features.jsx
-
 import {
     UnderstandingBreakpoints,
     FillingSpace,
@@ -10,8 +9,18 @@ import {
     ColumnDirection,
 } from '../features/Grids'
 
-import { TypesOfTypography, UsingThemeColors, WrappingText } from '../features/Typography'
-import AligningText from '../features/Typography/AligningText';
+import { 
+    TypesOfTypography, 
+    UsingThemeColors, 
+    WrappingText,
+    AligningText,
+} from '../features/Typography'
+
+import {
+    IconColorAndState,
+} from '../features/Icons'
+
+
 const Features = () => (
     // <UnderstandingBreakpoints />
     // <MarginAuto />
@@ -24,7 +33,9 @@ const Features = () => (
     // <TypesOfTypography />
     // <UsingThemeColors />
     // <AligningText />
-    <WrappingText />
+    // <WrappingText />
+
+    <IconColorAndState />
 );
 
 export default Features;
