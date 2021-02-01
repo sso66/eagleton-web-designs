@@ -7,19 +7,22 @@ import {
     AbstractContainerAndItems,
     FixedColumnLayout,
     ColumnDirection,
-} from '../features/Grids'
+} from '../features/Grids';
 
 import { 
     TypesOfTypography, 
     UsingThemeColors, 
     WrappingText,
     AligningText,
-} from '../features/Typography'
+} from '../features/Typography';
 
 import {
     IconColorAndState,
-} from '../features/Icons'
+} from '../features/Icons';
 
+import { 
+    ComposingMenusWithState, ComposingMenusWithStateAbstract 
+} from '../features/Menus';
 
 const Features = () => (
     // <UnderstandingBreakpoints />
@@ -35,7 +38,10 @@ const Features = () => (
     // <AligningText />
     // <WrappingText />
 
-    <IconColorAndState />
+    // <IconColorAndState />
+
+    // <ComposingMenusWithState />
+    <ComposingMenusWithStateAbstract />
 );
 
 export default Features;

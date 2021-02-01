@@ -6,7 +6,7 @@ import './App.scss';
 
 import { 
   Container,
-} from '@material-ui/core';
+} from '@material-ui/core'; 
 
 import { 
   Header,
