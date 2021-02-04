@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const baseURL = 'https://jsonplaceholder.typicode.com/';
+// const baseURL = 'https://api.tvmaze.com/search/shows?q=walking';
 
 export default function JsonPlaceholderAxiosUsers() {
     const [state, setState] = useState({});
@@ -10,7 +11,9 @@ export default function JsonPlaceholderAxiosUsers() {
     const [error, setError] = useState(null);
 
      const fetchUsersData = () => {
-        axios.get(`${baseURL}users`, {})
+        axios.get(`${baseURL}users`, {}) 
+        // axios.get(`${baseURL}`, {})
+
         .then(response => {
             const data = response.data;
             console.log(data);
@@ -28,7 +31,7 @@ export default function JsonPlaceholderAxiosUsers() {
                         <p>[{user.id-1}]</p>
                         <p>{user.name}</p>
                         <p>{user.email}</p>
-                        <p>{user.websidte}</p>
+                        <p>{user.website}</p>
                         <p>{user.company.name}</p>
                     </div>
                 )

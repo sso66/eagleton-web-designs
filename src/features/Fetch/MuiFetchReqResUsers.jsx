@@ -4,7 +4,6 @@ import { Grid } from '@material-ui/core';
 import PplCard from './PplCard';
 
 const baseURL = "https://reqres.in/api/"
-
 // setting the users initial state with React Hook
 export default function MuiFetchReqResUsers() {
     const [users, setUsers] = useState([]);

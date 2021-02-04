@@ -1,29 +1,59 @@
-// views/Features.jsx
+// File: views/Features.jsx
+// Note: React Hooks, Material-UI and Axios API features
+// Date: 2/1/2020
+// import {
+//     UnderstandingBreakpoints,
+//     FillingSpace,
+//     MarginAuto,
+//     Alignment,
+//     AbstractContainerAndItems,
+//     FixedColumnLayout,
+//     ColumnDirection,
+// } from '../features/Grids';
+
+// import { 
+//     TypesOfTypography, 
+//     UsingThemeColors, 
+//     WrappingText,
+//     AligningText,
+// } from '../features/Typography';
+
+// import {
+//     IconColorAndState,
+// } from '../features/Icons';
+
+// import {
+    // FixedPosition,
+    // ScrolledAppBar,
+    // AppBarWithButtons,
+// } from '../features/AppBars';
+
+// import {
+//     // ExpansionPanelList, 
+//     // ExpansionPanelListLazyLoad,
+// } from '../features/Accordions'
+    
+// import { 
+//     ComposingMenusWithState, 
+//     ComposingMenusWithStateAbstract, 
+//     CustomizingMenuItems, 
+//     MenuScrollingOptions,
+//     UsingMenuTransitions,
+// } from '../features/Menus';
+
 import {
-    UnderstandingBreakpoints,
-    FillingSpace,
-    MarginAuto,
-    Alignment,
-    AbstractContainerAndItems,
-    FixedColumnLayout,
-    ColumnDirection,
-} from '../features/Grids';
-
-import { 
-    TypesOfTypography, 
-    UsingThemeColors, 
-    WrappingText,
-    AligningText,
-} from '../features/Typography';
-
-import {
-    IconColorAndState,
-} from '../features/Icons';
-
-import { 
-    ComposingMenusWithState, ComposingMenusWithStateAbstract 
-} from '../features/Menus';
-
+//     Users,
+//     Article,
+    // JsonPlaceholderAxiosUsers,
+    TvMazeAxiosUsers,
+} from '../features/Axios';
+  
+// import {
+    // ReqResUsers,
+    // JsonPlaceholderFetchUsers,
+    // MuiFetchReqResUsers,
+// } from '../features/Fetch';
+    
 const Features = () => (
     // <UnderstandingBreakpoints />
     // <MarginAuto />
@@ -40,8 +70,18 @@ const Features = () => (
 
     // <IconColorAndState />
 
+    // <FixedPosition />
+    // <ScrolledAppBar />
+    // <AppBarWithButtons />
+
     // <ComposingMenusWithState />
-    <ComposingMenusWithStateAbstract />
+    // <ComposingMenusWithStateAbstract />
+    // <MenuScrollingOptions />
+    // <UsingMenuTransitions />
+    // <CustomizingMenuItems />
+
+    <TvMazeAxiosUsers />
+    // <MuiFetchReqResUsers />
 );
 
 export default Features;

@@ -1,52 +1,15 @@
-// App.jsx
+// File: App.jsx
+// Note: RWD-SPA
+// Date: 2/2/2021
 import React from 'react';
 import './App.scss';
 // import { Counter } from './features/Redux/Counter';
 // import logo from './logo.svg';
-
-import { 
-  Container,
-} from '@material-ui/core'; 
-
 import { 
   Header,
   Main, 
 } from './components/site';
 
-// ___ React Hooks, Material-UI and Axios API features
-import {
-  // FixedPosition,
-  // ScrolledAppBar,
-} from './features/AppBars';
-
-import {
-  // ExpansionPanelList, 
-  // ExpansionPanelListLazyLoad,
-} from './features/Accordions'
-
-import {
-  Users,
-  Article,
-  JsonPlaceholderAxiosUsers,
-  // JsonPlaceholderAxiosUsers,
-} from './features/Axios';
-
-import {
-  ReqResUsers,
-  JsonPlaceholderFetchUsers,
-  MuiFetchReqResUsers,
-} from './features/Fetch';
-
-
-// ___ Eagleton Web Designs Website ___
-// import {
-
-// } from './views/Home'
-
-import Features from './views/Features'
-
-// import About from './views/About'
-// import Contact from './views/Contact'
 
 function App() {
   return (
@@ -95,23 +58,11 @@ function App() {
             React Redux
           </a>
         </span> */}
+        <Header />
       </header>
-      <div>
+      <main>
         <Main />
-        <Container maxWidth='md'>
-          {/* <ExpansionPanelList /> */}
-          <hr />
-          {/* <ExpansionPanelListLazyLoad /> */}
-          <Article />
-          {/* <Users /> */}
-          {/* <ReqResUsers /> */}
-          {/* <JsonPlaceholderAxiosUsers /> */}
-          {/* <JsonPlaceholderFetchUsers /> */}
-          <hr />
-          {/* <MuiFetchReqResUsers /> */}
-          <Features />
-        </Container>
-      </div>
+      </main>
     </div>
   );
 }

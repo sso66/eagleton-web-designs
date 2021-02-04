@@ -1,9 +1,11 @@
-import Users from './Users';
-import Article from './Article';
-import JsonPlaceholderAxiosUsers from './JsonPlaceholderAxiosUsers'
+// import Users from './Users';
+// import Article from './Article';
+// import JsonPlaceholderAxiosUsers from './JsonPlaceholderAxiosUsers'
+import TvMazeAxiosUsers from './TvMazeAxiosUsers';
 
 export {
-    Users,
-    Article,
-    JsonPlaceholderAxiosUsers,
+    // Users,
+    // Article,
+    // JsonPlaceholderAxiosUsers,
+    TvMazeAxiosUsers,
 }
