@@ -1,5 +1,8 @@
+// features/HOC/Repositories.jsx
 import React from "react";
 import withDataFetching from "./withDataFetching";
+
+const baseURL = "https://api.github.com/users/royderks/repos";
 
 function Repositories({ loading, results, error }) {
   if (loading || error) {
@@ -20,5 +23,8 @@ function Repositories({ loading, results, error }) {
 }
 
 export default withDataFetching({
-  dataSource: "https://api.github.com/users/royderks/repos"
+  // dataSource: "https://api.github.com/users/royderks/repos"
+  dataSource: baseURL
 })(Repositories);
+
+// eof 

@@ -1,6 +1,7 @@
 // File: views/Features.jsx
 // Note: React Hooks, Material-UI and Axios API features
 // Date: 2/1/2020
+import { Fragment } from 'react';
 // import {
 //     UnderstandingBreakpoints,
 //     FillingSpace,
@@ -41,12 +42,13 @@
 //     UsingMenuTransitions,
 // } from '../features/Menus';
 
-import {
-//     Users,
-//     Article,
-    // JsonPlaceholderAxiosUsers,
-    TvMazeAxiosUsers,
-} from '../features/Axios';
+// import {
+    //  Article,
+    // JsonPlaceholderHookUsers,
+    // TvMazeAxiosUsers,
+    // SubmitForm,
+    // RetrieveList,
+// } from '../features/Axios';
   
 // import {
     // ReqResUsers,
@@ -54,7 +56,20 @@ import {
     // MuiFetchReqResUsers,
 // } from '../features/Fetch';
     
+// import {
+    // UserForm,
+    // Login
+// } from '../features/Users';
+
+// import ReactReduxGitHub from '../features/HOC/ReactReduxGithub';
+
+import {
+    AppClass,
+    AppFunction,
+} from '../features/Hooks';
+
 const Features = () => (
+    
     // <UnderstandingBreakpoints />
     // <MarginAuto />
     // <FillingSpace />
@@ -80,8 +95,17 @@ const Features = () => (
     // <UsingMenuTransitions />
     // <CustomizingMenuItems />
 
-    <TvMazeAxiosUsers />
+    // <TvMazeAxiosUsers />
     // <MuiFetchReqResUsers />
+    <Fragment>
+        {/* <UserForm /> */}
+        {/* <Login /> */}
+        {/* <ReactReduxGitHub /> */}
+        <AppClass />
+        <hr />
+        <AppFunction />
+    </Fragment>
+
 );
 
 export default Features;

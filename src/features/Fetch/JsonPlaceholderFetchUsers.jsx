@@ -5,8 +5,8 @@ const baseURL = 'https://jsonplaceholder.typicode.com/';
 
 export default function JsonPlaceholderFetchUsers() {
     const [state, setState] = useState({});
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
+    // const [isLoading, setIsLoading] = useState(false);
+    // const [error, setError] = useState(null);
 
      const fetchUsersData = () => {
         fetch(`${baseURL}users`)

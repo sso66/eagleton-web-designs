@@ -1,5 +1,7 @@
+// features/Redux/Counter.js
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
 import {
   decrement,
   increment,
@@ -58,3 +60,5 @@ export function Counter() {
     </div>
   );
 }
+
+// eof

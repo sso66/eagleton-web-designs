@@ -5,8 +5,8 @@ const baseURL = "https://reqres.in/api/"
 
 export default function ReqResUsers() {
   const [users, setUsers] = useState([]);
-  const [loading] = useState(false);
-  const [errors] = useState(null);
+  // const [loading] = useState(false);
+  // const [errors] = useState(null);
 
   const fetchUsers = async () => {
     const response = await fetch(`${baseURL}users`)

@@ -5,7 +5,7 @@ import axios from 'axios';
 const baseURL = 'https://jsonplaceholder.typicode.com/';
 // const baseURL = 'https://api.tvmaze.com/search/shows?q=walking';
 
-export default function JsonPlaceholderAxiosUsers() {
+export default function JsonPlaceholderHookUsers() {
     const [state, setState] = useState({});
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);

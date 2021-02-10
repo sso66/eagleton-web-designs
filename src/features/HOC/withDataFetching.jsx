@@ -1,3 +1,4 @@
+// features/HOC/withDataFetching.jsx
 import React from "react";
 
 const withDataFetching = props => WrappedComponent => {

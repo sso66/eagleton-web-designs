@@ -1,12 +1,15 @@
-// Users.jsx
+// File: Login.jsx
+// Date: 2/8/2021
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import User from './User';
+
 const baseURL = 'https://jsonplaceholder.typicode.com/';
 
-export default function Users() {
+export default function Login() {
     const [state, setState] = useState([]);
-    const [error, setError] = useState(null)
+    const [setError] = useState(null)
 
     const fetchUserData = () => {
         axios.get(`${baseURL}users`, {})
@@ -37,9 +40,12 @@ export default function Users() {
     }
     useEffect(() => {
         fetchUserData();
-    }, [])
+    }, [""])
 
     return (
-        <div>{state.users}</div>
+        <div>
+            {state.users}
+            <User />
+        </div>
     );
 }; 

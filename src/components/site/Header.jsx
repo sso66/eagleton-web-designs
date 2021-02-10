@@ -17,7 +17,7 @@ function Header() {
             <Container maxWidth='md'>
                 <Toolbar>
                     <Typography variant='h6' color='default'>
-                        React Hooks, Material-UI and Axios API
+                        React-Redux, Material-UI, Axios API
                     </Typography>
                 </Toolbar>
             </Container>

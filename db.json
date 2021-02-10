@@ -1,0 +1,29 @@
+{
+    "beatles": [
+        {
+            "id": 1,
+            "firstname": "John",
+            "lastname": "Lennon",
+            "email": "john.lennon@beatles.com"
+        },
+        {
+            "id": 2,
+            "firstname": "Paul",
+            "lastname": "McCartney",
+            "email": "paul.mccartnery@beatles.com"
+        },
+        {
+            "id": 3,
+            "firstname": "George",
+            "lastname": "Harrison",
+            "email": "george.harrison@beatles.com"
+        },
+        {
+            "id": 4,
+            "firstname": "Ringo",
+            "lastname": "Starr",
+            "email": "ringo.starr@beatles.com"
+        }
+
+    ]
+}

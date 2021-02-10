@@ -18,6 +18,7 @@ export default function MuiFetchReqResUsers() {
                     .catch(error => console.log(error, 'warning'))
             )
         }
+
         fetchUserData();
     }, []);
 
