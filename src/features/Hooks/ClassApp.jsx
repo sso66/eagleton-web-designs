@@ -1,13 +1,13 @@
-// features/Hooks/AppClass.jsx
+// features/Hooks/ClassApp.jsx
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// const baseURL = 'https://jsonplaceholder.typicode.com/';
-
-class AppClass extends Component {
+class ClassApp extends Component {
     state = {
         age: 30,
         status: 'married',
+
+        results: [],
     }
 
     static propTypes = {
@@ -40,6 +40,6 @@ class AppClass extends Component {
     }
 }
 
-export default AppClass;
+export default ClassApp;
 
 // eof

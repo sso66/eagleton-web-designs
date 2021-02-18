@@ -64,9 +64,18 @@ import { Fragment } from 'react';
 // import ReactReduxGitHub from '../features/HOC/ReactReduxGithub';
 
 import {
-    AppClass,
-    AppFunction,
+    // ClassApp,
+    // FunctionApp,
+    // ClassApi,
 } from '../features/Hooks';
+
+import {
+    // ParentChildForm,
+    // EmployeeSalaryForm,
+    // LoginFormIndividual,
+    LoginFormGroup,
+} from '../features/Forms';
+
 
 const Features = () => (
     
@@ -101,9 +110,14 @@ const Features = () => (
         {/* <UserForm /> */}
         {/* <Login /> */}
         {/* <ReactReduxGitHub /> */}
-        <AppClass />
+        {/* <ClassApp /> */}
         <hr />
-        <AppFunction />
+        {/* <FunctionApp /> */}
+        {/* <ClassApi /> */}
+        {/* <ParentChildForm /> */}
+        {/* <EmployeeSalaryForm /> */}
+        {/* <LoginFormIndividual /> */}
+        <LoginFormGroup />
     </Fragment>
 
 );

@@ -1,7 +1,9 @@
-import AppClass from './AppClass';
-import AppFunction from './AppFunction'
+import ClassApp from './ClassApp';
+import FunctionApp from './FunctionApp'
+import ClassApi from './ClassApi';
 
 export {
-    AppClass,
-    AppFunction,
+    ClassApp,
+    FunctionApp,
+    ClassApi,
 }
