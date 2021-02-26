@@ -8,7 +8,7 @@ import './App.scss';
 import { 
   Header,
   Main, 
-} from './components/site';
+} from './components/Site';
 
 
 function App() {

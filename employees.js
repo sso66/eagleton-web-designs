@@ -1,4 +1,4 @@
-// employees.js
+// employees.js - Node.js App
 const faker = require('faker');
 
 function generateEmployees() {
